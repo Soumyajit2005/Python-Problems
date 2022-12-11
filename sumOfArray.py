@@ -18,9 +18,6 @@ def sum(arr):
 # input values to list
 arr = [12, 3, 4, 15]
  
-# calculating length of array
-n = len(arr)
- 
 ans = sum(arr)
  
 # display sum
