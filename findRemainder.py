@@ -6,8 +6,9 @@ def find_remainder(arr, n):
     temp = 1
     for number in arr:
         temp = number * temp
-    print(temp%n)
+    print(temp % n)
+
 
 arr = [100, 10, 5, 25, 35, 14]
 n = 11
-find_remainder(arr, n) 
+find_remainder(arr, n)
