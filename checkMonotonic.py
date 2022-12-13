@@ -5,10 +5,14 @@
 # Return Type: Boolean value, “True” if the given array A is monotonic else return “False” (without quotes). 
 
 def isMonotonic(A):
-    pass
+    value = False
+    for i in range(1,len(A)):
+        if(A[i - len(A)] <= A[i]) or A[i] >= A[i - len(A)]:
+            value = True
+    return value
 
 # Driver program
 A = [6, 5, 4, 4]
- 
+
 # Print required result
-print(isMonotonic(A))
+print(isMonotonic(A))  #True
