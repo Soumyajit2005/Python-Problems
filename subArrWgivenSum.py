@@ -4,19 +4,19 @@
 
 #Function to find a continuous sub-array which adds up to a given number.
 class Solution:
-    def subArraySum(self,arr, n, s): 
-       #Write your code here
-       i = 0
-       sum = 0
-       while i<n:
-           for item in self.arr[i:]:
-               sum += item
-            # if sum == s:
-            #    return arr[i]
-            # i = i+1
+    def subArraySum(self,arr, n, s):
+        sum = 0
+        for i in range(n):
+            if arr[i] == s:
+                return "The sum found at index " + str(i)
+            else:
+                for j in range(i+1,n):
+                    if sum == s:
+                        return "The sum found between indexes",i,j
+                    sum += arr[i]
 
 ob = Solution()
-ob.subArraySum([1,2,3,7,5], 5, 12)
+ob.subArraySum([1,2,3,7,5], 5, 12) #Output: 2, 4
 
 
 #Wrong code will fix it later
