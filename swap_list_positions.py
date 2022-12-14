@@ -22,4 +22,4 @@ def swapPositions(list, pos1, pos2):
 List = [23, 65, 19, 90]
 pos1, pos2 = 1, 3
 
-print("By method 1: ", swapPositions(List, pos1, pos2))  # Output:[19,65,23,90]
+print("By the method: ", swapPositions(List, pos1, pos2))  # Output:[19,65,23,90]
